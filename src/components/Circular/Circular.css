@@ -1,0 +1,15 @@
+.circular{
+margin-left: 100px;
+border: solid 2px #E8E8E8;
+border-radius: 8px;
+padding: 10px;
+margin-bottom: 40px;
+}
+.circular img{
+    width: 200px;
+    height: 120px;
+
+}
+.location-salary icon{
+margin-right: 10px;
+}

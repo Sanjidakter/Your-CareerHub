@@ -1,0 +1,57 @@
+[
+    {
+      "id":"1",
+      "logo": "https://images.unsplash.com/photo-1555597906-44a7f7e3e0e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "job_position": "Software Engineer",
+      "company_name": "Acme Corporation",
+      "job_type": ["Full Time", "Onsite"],
+      "location": "San Francisco, CA",
+      "salary": "$120,000 - $140,000"
+    },
+    {
+      "id":"2",
+      "logo": "https://images.unsplash.com/photo-1529612700005-e35377bf1415?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "job_position": "Marketing Manager",
+      "company_name": "Globex Industries",
+      "job_type": ["Remote", "Full Time"],
+      "location": "Any Location",
+      "salary": "$90,000 - $110,000"
+    },
+    {
+      "id":"3",
+      "logo": "https://images.unsplash.com/photo-1619551734325-81aaf323686c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80",
+      "job_position": "Graphic Designer",
+      "company_name": "Design Co.",
+      "job_type": ["Onsite", "Part Time"],
+      "location": "New York, NY",
+      "salary": "$30 - $40/hour"
+    },
+    {
+      "id":"4",
+      "logo": "https://images.unsplash.com/photo-1551263640-1c007852f616?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "job_position": "Data Analyst",
+        "company_name": "XYZ Corp",
+        "job_type": ["Remote", "Full Time"],
+        "location": "Chicago, IL",
+        "salary": "$80,000 - $100,000"
+      },
+      {
+        "id":"5",
+        "logo": "https://images.unsplash.com/photo-1562783912-21ad31ee2a83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1248&q=80",
+        "job_position": "Sales Representative",
+        "company_name": "ABC Inc",
+        "job_type": ["Onsite", "Full Time"],
+        "location": "Los Angeles, CA",
+        "salary": "$60,000 - $80,000"
+      },
+      {
+        "id":"6",
+        "logo": "https://images.unsplash.com/photo-1612222869049-d8ec83637a3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+        "job_position": "Customer Service Associate",
+        "company_name": "Customer First",
+        "job_type": ["Onsite", "Part Time"],
+        "location": "Miami, FL",
+        "salary": "$15 - $20/hour"
+      }
+  ]
+  

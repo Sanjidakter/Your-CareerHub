@@ -2,8 +2,8 @@ import React from 'react';
 
 const AppliedJobs = () => {
     return (
-        <div>
-            <h2>Applied jobs page</h2>
+        <div >
+            <h2>Applied jobs </h2>
         </div>
     );
 };
