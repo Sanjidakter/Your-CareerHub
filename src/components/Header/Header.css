@@ -1,0 +1,24 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.header h2 {
+  width: 100px;
+  height: 44px;
+  margin-right: 200px;
+}
+.nav-links{
+    margin-right: 200px;
+}
+nav a {
+  margin-right: 42px;
+  font-size: 16px;
+}
+.btn-apply {
+  background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+  border-radius: 8px;
+}
