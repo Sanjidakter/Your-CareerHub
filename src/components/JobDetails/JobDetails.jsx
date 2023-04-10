@@ -35,7 +35,10 @@ const handleAddToCart = singleJobData =>{
 
 
   return (
-    <div className="jobdetails-container">
+    <div>
+        <h2 style={{textAlign:"center"}}>Job Details</h2>
+        <div className="jobdetails-container">
+        
       <div className="job-description">
         <h3>Job Description: </h3>
         <p>
@@ -80,14 +83,17 @@ const handleAddToCart = singleJobData =>{
         <p>
           Adress : <span style={{ color: "#757575" }}>{singleJobData.location}</span>
         </p>
-        <button onClick={() => handleAddToCart(singleJobData)}>Apply Now</button>
+        <button onClick={() => handleAddToCart()}>Apply Now</button>
       </div>
       <div>
         <AppliedJobs
         cart = {cart}
+        handleAddToCart ={handleAddToCart}
         ></AppliedJobs>
       </div>
     </div>
+    </div>
+    
   );
 };
 
