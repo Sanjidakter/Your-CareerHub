@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import img from  "./../../assets/All Images/P3OLGJ1 copy 1.png"
 import Circular from "../Circular/Circular";
@@ -6,6 +6,7 @@ import "./Home.css";
 
 const Home = () => {
   const circulars = useLoaderData();
+  
   return (
     <div>
         <div className="intro">

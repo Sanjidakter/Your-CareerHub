@@ -12,4 +12,6 @@ margin-bottom: 40px;
 }
 .location-salary icon{
 margin-right: 10px;
+margin-block-end: 0 !important;
+margin-block-start: 0 !important;
 }
