@@ -1,0 +1,26 @@
+[ 
+     {   
+        "id" : "1",
+         "icon": "https://cdn-icons-png.flaticon.com/512/1172/1172936.png?w=740&t=st=1681144026~exp=1681144626~hmac=277b0e48784bf05e73984e11de564a57aaddba2b9d99af3b47ce06404496067e", 
+        "position": "Software Engineer", 
+           "numPositions": 10 
+     },  
+     {  
+        "id" : "2",
+          "icon": "https://cdn-icons-png.flaticon.com/512/1256/1256102.png?w=740&t=st=1681144233~exp=1681144833~hmac=c94aa2221a162c2c07921661fa5a9d2828341084ae6104aed54c94b1db491bd4",    
+     "position": "Data Analyst",   
+      "numPositions": 5 
+     },  
+     {   
+        "id" : "3",
+         "icon": "https://cdn-icons-png.flaticon.com/512/90/90483.png?w=740&t=st=1681144207~exp=1681144807~hmac=34524df46629a6dbe55954796b5fefcf2dd5fcfb195cf4a14f2bc6c2a7f00e04",   
+          "position": "Graphic Designer",   
+           "numPositions": 8 
+     }, 
+      { 
+        "id" : "4",
+           "icon": "https://cdn-icons-png.flaticon.com/512/66/66607.png?w=740&t=st=1681144173~exp=1681144773~hmac=dd25f45062fe43f43fc913b14b544c05cc3a6a84297e73b762d762cf5a443b5c",    
+           "position": "Business analyst",  
+             "numPositions": 12
+      }
+    ]

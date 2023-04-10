@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AppliedJobs = () => {
+const AppliedJobs = ({cart}) => {
     return (
         <div >
-            <h2>Applied jobs </h2>
+            <h2>Applied jobs:{cart.length} </h2>
         </div>
     );
 };

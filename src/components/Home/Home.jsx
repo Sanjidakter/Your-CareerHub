@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import img from "./../../assets/All Images/P3OLGJ1 copy 1.png";
 import Circular from "../Circular/Circular";
@@ -7,6 +7,23 @@ import JobCategory from "../JobCategory/JobCategory";
 
 const Home = () => {
   const circulars = useLoaderData();
+  const [category, setCategory] = useState([]);
+ 
+ 
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const response = await fetch("/jobcategory.json");
+        const data = await response.json();
+        setCategory(data);
+       
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    loadData();
+  }, []);
 
   return (
     <div>
@@ -37,10 +54,10 @@ const Home = () => {
           </small></p>
       </div>
           <div className="category-container">
-          {circulars.map((circular) => (
+          {category.map((category) => (
             <JobCategory
-            key={circular.id} 
-            circular={circular}
+            key={category.id} 
+            category={category}
             >
 
             </JobCategory>
@@ -60,7 +77,7 @@ const Home = () => {
         </div>
         <div className="circulars-container">
           {circulars.map((circular) => (
-            <Circular key={circular.id} circular={circular}></Circular>
+            <Circular key={circular.id} circular={circular} ></Circular>
           ))}
         </div>
         <button style={{ backgroundColor: "#7E90FE",marginLeft:"600px" }}>See More</button>
