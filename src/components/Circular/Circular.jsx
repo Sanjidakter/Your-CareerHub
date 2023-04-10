@@ -31,11 +31,11 @@ const Circular = ({ circular }) => {
           className="location-salary"
         >
           <p>
-            <FontAwesomeIcon icon={faLocationDot} />
+            <FontAwesomeIcon icon={faLocationDot} style={{marginRight:"8px"}} />
             {location}
           </p>
           <p>
-            <FontAwesomeIcon icon={faCircleDollarToSlot} />
+            <FontAwesomeIcon icon={faCircleDollarToSlot } style={{marginRight:"8px"}} />
             Salary : {salary}
           </p>
         </p>

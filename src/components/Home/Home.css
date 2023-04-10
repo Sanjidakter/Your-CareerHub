@@ -26,3 +26,10 @@ border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+.category-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -10,6 +10,7 @@ import Home from './components/Home/Home';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import Main from './components/Layout/Main';
 import JobDetails from './components/JobDetails/JobDetails';
+import Blogs from './components/Blogs/Blogs';
 
 const router = createBrowserRouter(
   [
@@ -25,11 +26,15 @@ const router = createBrowserRouter(
         {
           path: 'jobdetails/:jobId',
           element: <JobDetails></JobDetails>,
-          loader:({params}) => fetch('jobcirculars.json?i=${params.jobId}')
+          loader:({params}) => fetch('/jobcirculars.json?i=${params.jobId}')
         },
         {
           path: 'appliedjobs',
           element: <AppliedJobs></AppliedJobs>
+        },
+        {
+          path: 'blogs',
+          element: <Blogs></Blogs>
         }
       ]
     }

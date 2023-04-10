@@ -1,3 +1,4 @@
+
 [
     {
       "id":"1",
@@ -6,7 +7,11 @@
       "company_name": "Acme Corporation",
       "job_type": ["Full Time", "Onsite"],
       "location": "San Francisco, CA",
-      "salary": "$120,000 - $140,000"
+      "salary": "$120,000 - $140,000",
+
+      "department": "Marketing",  
+       "num_posts_available": "10 ",
+       "icons" : "faShareFromSquare"
     },
     {
       "id":"2",
@@ -15,7 +20,9 @@
       "company_name": "Globex Industries",
       "job_type": ["Remote", "Full Time"],
       "location": "Any Location",
-      "salary": "$90,000 - $110,000"
+      "salary": "$90,000 - $110,000",   
+       "department": "Engineering",    "num_posts_available": "5",
+       "icons" : "faFileInvoice"
     },
     {
       "id":"3",
@@ -24,7 +31,9 @@
       "company_name": "Design Co.",
       "job_type": ["Onsite", "Part Time"],
       "location": "New York, NY",
-      "salary": "$30 - $40/hour"
+      "salary": "$30 - $40/hour",
+      "department": "Research and Development",    "num_posts_available":" 3",
+      "icons":"faMicrochip"
     },
     {
       "id":"4",
@@ -33,7 +42,9 @@
         "company_name": "XYZ Corp",
         "job_type": ["Remote", "Full Time"],
         "location": "Chicago, IL",
-        "salary": "$80,000 - $100,000"
+        "salary": "$80,000 - $100,000", 
+           "department": "Information Technology",    "num_posts_available": "12",
+           "icons":"faLightbulb"
       },
       {
         "id":"5",
