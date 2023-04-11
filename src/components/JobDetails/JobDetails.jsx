@@ -3,6 +3,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 import "./JobDetails.css";
 import AppliedJobs from "../AppliedJobs/AppliedJobs";
 import { addToDb } from "../../utilities/fakedb";
+import { ToastContainer,toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetails = () => {
   const [singleJobData, setSingleJobData] = useState({});
@@ -34,6 +36,8 @@ const JobDetails = () => {
     console.log(singleJobData);
     addToDb(id);
   };
+
+
 
   return (
     <div>
@@ -87,7 +91,8 @@ const JobDetails = () => {
             Adress :{" "}
             <span style={{ color: "#757575" }}>{singleJobData?.location}</span>
           </p>
-          <button onClick={() => handleAddToCart(singleJobData?.id)}>
+        
+          <button onClick={() =>{handleAddToCart(singleJobData?.id)}}>
             Apply Now
           </button>
         </div>

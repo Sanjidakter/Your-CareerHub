@@ -13,6 +13,7 @@ import JobDetails from './components/JobDetails/JobDetails';
 import Blogs from './components/Blogs/Blogs';
 import Statistics from './components/Statistics/Statistics';
 
+
 const router = createBrowserRouter(
   [
     {

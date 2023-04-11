@@ -32,3 +32,16 @@
   align-items: center;
 }
 
+/* For mobile devices */
+@media (max-width: 767px) {
+  .container{
+    width: 100%;
+  }
+}
+
+/* For larger devices */
+@media (min-width: 768px) {
+  .container{
+    width: 95%;
+  }
+}

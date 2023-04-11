@@ -13,6 +13,7 @@
 }
 .nav-links{
     margin-right: 200px;
+    
 }
 nav a {
   margin-right: 42px;
@@ -21,4 +22,19 @@ nav a {
 .btn-apply {
   background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
   border-radius: 8px;
+}
+
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+  }
+}
+
+/* For larger devices */
+@media (min-width: 768px) {
+  .header{
+    width: 85%;
+  }
 }
