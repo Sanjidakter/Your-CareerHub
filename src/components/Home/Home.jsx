@@ -4,10 +4,15 @@ import img from "./../../assets/All Images/P3OLGJ1 copy 1.png";
 import Circular from "../Circular/Circular";
 import "./Home.css";
 import JobCategory from "../JobCategory/JobCategory";
+import AppliedJobs from "../AppliedJobs/AppliedJobs";
+import JobDetails from "../JobDetails/JobDetails";
+import { addToDb } from "../../utilities/fakedb";
 
 const Home = () => {
   const circulars = useLoaderData();
   const [category, setCategory] = useState([]);
+
+
  
  
 
@@ -82,6 +87,9 @@ const Home = () => {
         </div>
         <button style={{ backgroundColor: "#7E90FE",marginLeft:"600px" }}>See More</button>
       </div>
+
+
+      
     </div>
   );
 };

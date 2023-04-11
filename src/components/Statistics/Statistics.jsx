@@ -4,8 +4,10 @@ import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Responsive
 const data = [
   { x: 1, y: 60, z: 200 },
   { x: 2, y: 60, z: 260 },
+  { x: 3, y: 55, z: 260 },
   { x: 4, y: 58, z: 400 },
   { x: 5, y: 55, z: 280 },
+  { x: 6, y: 52, z: 280 },
   { x: 7, y: 60, z: 500 },
   { x: 8, y: 60, z: 200 },
 ];
