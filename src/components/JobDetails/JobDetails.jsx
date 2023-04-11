@@ -37,7 +37,17 @@ const JobDetails = () => {
     addToDb(id);
   };
 
+// toaster///////
+const [clickCount, setClickCount] = useState(0);
+  const [showMessage, setShowMessage] = useState(false);
 
+  const handleClick = () => {
+    setClickCount(clickCount + 1);
+    if (clickCount > 0) {
+      setShowMessage(true);
+    }
+  };
+// ///end//////
 
   return (
     <div>
@@ -92,9 +102,12 @@ const JobDetails = () => {
             <span style={{ color: "#757575" }}>{singleJobData?.location}</span>
           </p>
         
-          <button onClick={() =>{handleAddToCart(singleJobData?.id)}}>
+          {/* <button onClick={() =>{handleAddToCart(singleJobData?.id)}}>
             Apply Now
-          </button>
+          </button> */}
+
+          <button onClick={()=>{handleClick();handleAddToCart(singleJobData?.id);}}>Apply Now</button>
+          {showMessage && <p style={{color:"red"}}>Already Applied!!!</p>}
         </div>
       </div>
     </div>

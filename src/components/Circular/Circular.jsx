@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-const Circular = ({ circular }) => {
+const Circular = ({ circular,showMore  }) => {
   const { id,logo, company_name, job_position, job_type, location, salary } =
     circular;
     const navigate = useNavigate()

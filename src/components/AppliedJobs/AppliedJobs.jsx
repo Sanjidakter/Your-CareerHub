@@ -40,24 +40,25 @@ const AppliedJobs = () => {
     setCart(newCart);
     addToDb(job.id);
   };
-//////////Filter//////////
-// const ShopList = () => {
-//     const [selectedJobType, setSelectedJobType] = useState("all");
+  //////////Filter//////////
+  function AttendanceSelector() {
+    const [sortjob, setAttendance] = useState('onsite'); // default value
+    const storedAttendance = localStorage.getItem('job-cart');
   
-//     const jobTypes = ["all", "remote", "offsite"];
+    useEffect(() => {
+      if (storedAttendance) {
+        setAttendance(storedAttendance);
+      }
+    }, [storedAttendance]);
   
-//     const handleClick = () => {
-//       const currentIndex = jobTypes.indexOf(selectedJobType);
-//       const nextIndex = (currentIndex + 1) % jobTypes.length;
-//       setSelectedJobType(jobTypes[nextIndex]);
-//     };
-  
-//     const filteredShops = selectedJobType === "all" ? cart : cart.filter(shop => shop.job_type
-//         .includes(selectedJobType));
-  
-//     }
+    const handleAttendanceChange = (event) => {
+      const selectedAttendance = event.target.value;
+      setAttendance(selectedAttendance);
+      localStorage.setItem('sortjob', selectedAttendance);
+    };
+  }
 
-// /////////////End of filter////////
+  // /////////////End of filter////////
 
   console.log(cart);
   return (
@@ -66,7 +67,16 @@ const AppliedJobs = () => {
       <h2 style={{ textAlign: "center", verticalAlign: "center" }}>
         Applied Jobs
       </h2>
-      
+      {/* filter button */}
+      <label style={{ marginLeft: "80%" }} for="sortjob">
+        Filter By:
+      </label>
+      <select id="sortjob" name="sortjob">
+        <option value="onsite">Full Time</option>
+        <option value="remote">Remote</option>
+        <option value="hybrid">Onsite</option>
+      </select>
+      {/* end of filter button */}
 
       {cart.map((item) => (
         <Job key={item.id} item={item}></Job>

@@ -26,6 +26,14 @@ const Home = () => {
     loadData();
   }, []);
 
+  // ///for show more////////
+  const [showMore, setShowMore] = useState(false);
+
+  const handleClick = () => {
+    setShowMore(true);
+  };
+  // //end///////
+
   return (
     <div className="container">
      
@@ -79,10 +87,19 @@ const Home = () => {
               {circulars.map((circular) => (
                 <Circular key={circular.id} circular={circular}></Circular>
               ))}
-            </div>
+            </div> 
             <button style={{ backgroundColor: "#7E90FE", marginLeft: "600px" }}>
               See More
-            </button>
+            </button> 
+
+            {/* show more */}
+{/*             
+            <Circular circulars={circulars} showMore={showMore} />
+      {!showMore && (
+        <button onClick={handleClick}>See more</button>
+      )} */}
+
+      {/* ********** */}
         
       </div>
     </div>
