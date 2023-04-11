@@ -12,6 +12,7 @@ import Main from './components/Layout/Main';
 import JobDetails from './components/JobDetails/JobDetails';
 import Blogs from './components/Blogs/Blogs';
 import Statistics from './components/Statistics/Statistics';
+import ErrorRoute from './components/ErrorRoute/ErrorRoute';
 
 
 const router = createBrowserRouter(
@@ -41,6 +42,10 @@ const router = createBrowserRouter(
         {
           path:'statistics',
           element: <Statistics></Statistics>
+        },
+        {
+          path:"*",
+           element: <ErrorRoute></ErrorRoute>
         }
       ]
     }

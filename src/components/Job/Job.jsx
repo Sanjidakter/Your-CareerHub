@@ -44,14 +44,14 @@ const Job = ({ item }) => {
             style={{ display: "flex", gap: "20px" }}
             className="location-salary"
           >
-            <p style={{ width: "60%" }}>
+            <p>
               <FontAwesomeIcon
                 icon={faLocationDot}
                 style={{ marginRight: "8px" }}
               />
               {item?.location}
             </p>
-            <p>
+            <p style={{margin:"16px 0px"}}>
               <FontAwesomeIcon icon={faCircleDollarToSlot} style={{}} />
               Salary : {item?.salary}
             </p>
@@ -60,8 +60,8 @@ const Job = ({ item }) => {
         <button
           style={{
             backgroundColor: "#7E90FE",
-            marginLeft: "40%",
-            marginTop: "5%",
+            marginLeft: "30%",
+            marginTop: "10%",
             width: "12%",
             height: "5%",
           }}
