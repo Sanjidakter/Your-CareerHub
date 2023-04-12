@@ -8,9 +8,8 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const Circular = ({ circular,showMore  }) => {
-  const { id,logo, company_name, job_position, job_type, location, salary } =
-    circular;
-    const navigate = useNavigate()
+  const { id,logo, company_name, job_position, job_type, location, salary } = circular;
+    const navigate = useNavigate();
   return (
     <div className="circular">
       <img src={logo} alt="" />

@@ -22,3 +22,6 @@ border-radius: 8px;
 padding: 16px 20px;
 text-align: center;
 }
+.job-details button:hover{
+  background: linear-gradient(90deg, #505a9f 0%, #3f19a6 100%);
+}

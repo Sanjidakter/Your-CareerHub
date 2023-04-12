@@ -5,10 +5,11 @@ import {
   faLocationDot,
   faCircleDollarToSlot,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Job = ({ item }) => {
-  // const { id,logo, company_name, job_position, job_type, location, salary } = cart;
-  //   console.log(item.company_name);
+  console.log(item);
+  const navigate = useNavigate();
   return (
     <div
       className="job-container"
@@ -57,7 +58,7 @@ const Job = ({ item }) => {
             </p>
           </p>
         </div>
-        <button
+        <button onClick={()=>navigate(`/jobdetails/${item.id}`)}
           style={{
             backgroundColor: "#7E90FE",
             marginLeft: "30%",
