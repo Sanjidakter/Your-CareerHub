@@ -4,4 +4,5 @@
 - show more for more job options
 - job details are fetched from json data
 - Already applied message for already applied jobs
+- mobile responsive
 
