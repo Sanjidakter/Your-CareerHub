@@ -79,11 +79,6 @@ const Home = () => {
             </small>
           </p>
         </div>
-        {/* <div className="circulars-container">
-              {circulars.map((circular) => (
-                <Circular key={circular.id} circular={circular}></Circular>
-              ))}
-            </div>  */}
 
         <div className="circulars-container">
           {circulars
@@ -92,8 +87,12 @@ const Home = () => {
               <Circular key={circular.id} circular={circular}></Circular>
             ))}
           {!showMore && (
-            <button
-              style={{ backgroundColor: "#7E90FE", marginLeft: "500px", width:"30%" }}
+            <button className="show-morejob"
+              style={{
+                backgroundColor: "#7E90FE",
+                marginLeft: "500px",
+                width: "30%",
+              }}
               onClick={handleClick}
             >
               See All Jobs

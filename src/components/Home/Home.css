@@ -37,6 +37,27 @@
   .container{
     width: 100%;
   }
+  .intro{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .intro img{
+    width: 50%;
+  }
+  .category-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+  }
+  .circulars-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 0;
+  
+}
+.show-morejob{
+  margin-left: 150px;
+}
 }
 
 /* For larger devices */

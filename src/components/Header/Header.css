@@ -29,6 +29,16 @@ nav a {
 @media (max-width: 767px) {
   .header {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 40%;
+  }
+  .nav-links{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .btn-apply{
+    width: 30%;
   }
 }
 
